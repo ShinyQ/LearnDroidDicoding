@@ -1,7 +1,10 @@
 # LearnDroidDicoding
 Kelas Android Belajar Android Pemula
 
-#### Just A Repository For My Learning Progress At Dicoding ...
+Projek 1 : Mencari Hasil Volume
+
+ScreenShoot : 
+<img src="images/v1.jpg" width="100px" height="100px">
 
 
 
