@@ -12,14 +12,14 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Panjang :"
+        android:text="Masukkan Panjang :"
         android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="@color/colorPrimary"
         />
 
     <EditText
-        android:id="@+id/edt_length"
+        android:id="@+id/panjang"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
@@ -29,14 +29,14 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Lebar :"
+        android:text="Masukkan Lebar :"
         android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="@color/colorPrimary"
         />
 
     <EditText
-        android:id="@+id/edt_width"
+        android:id="@+id/lebar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
@@ -47,14 +47,14 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tinggi"
+        android:text="Masukkan Tinggi"
         android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="@color/colorPrimary"
         />
 
     <EditText
-        android:id="@+id/edt_height"
+        android:id="@+id/tinggi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
@@ -63,7 +63,7 @@
         />
 
     <Button
-        android:id="@+id/btn_calculate"
+        android:id="@+id/btn_kalkulasi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Kalkulasi"
@@ -73,27 +73,33 @@
         android:layout_marginBottom="@dimen/activity_vertical_margin"
         />
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal">
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hasil"
+        android:text="Volume Balok = "
         android:gravity="center"
         android:textSize="24sp"
         android:textStyle="bold"
         android:textColor="@color/colorPrimary"
-        android:layout_marginTop="14dp"
         />
-
     <TextView
-        android:id="@+id/result"
+        android:id="@+id/hasil"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="0"
+        android:text="0 cm"
         android:gravity="center"
         android:textSize="24sp"
         android:textStyle="bold"
         android:textColor="@color/colorPrimary"
         android:layout_marginBottom="@dimen/activity_vertical_margin"
         />
+    </LinearLayout>
 
 </LinearLayout>
