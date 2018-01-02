@@ -44,6 +44,13 @@ public class MainActivity extends AppCompatActivity {
         rvCategory.setAdapter(gridPresidentAdapter);
     }
 
+    private void showRecyclerCardView(){
+        rvCategory.setLayoutManager(new LinearLayoutManager(this));
+        CardViewPresidentAdapter cardViewPresidentAdapter = new CardViewPresidentAdapter(this);
+        cardViewPresidentAdapter.setListPresident(list);
+        rvCategory.setAdapter(cardViewPresidentAdapter);
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main_menu, menu);
@@ -53,22 +60,28 @@ public class MainActivity extends AppCompatActivity {
     @Override
 
     public boolean onOptionsItemSelected(MenuItem item) {
+
         switch (item.getItemId()){
             case R.id.action_list:
-                showRecyclerList();
                 getSupportActionBar().setTitle("List View");
+                showRecyclerList();
                 break;
+
             case R.id.action_grid:
+                getSupportActionBar().setTitle("Grid View");;
                 showRecyclerGrid();
-                getSupportActionBar().setTitle("Grid View");
                 break;
+
             case R.id.action_cardview:
+                getSupportActionBar().setTitle("Card View");
+                showRecyclerCardView();
                 break;
         }
         return super.onOptionsItemSelected(item);
-
     }
+
 }
+
 
 
 
